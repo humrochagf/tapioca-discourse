@@ -1,4 +1,4 @@
-# coding: utf-8
+# -*- coding: utf-8 -*-
 
 from tapioca import (JSONAdapterMixin, TapiocaAdapter,
                      generate_wrapper_from_adapter)
