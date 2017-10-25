@@ -15,7 +15,6 @@ from .private_messages import PRIVATE_MESSAGES_MAPPING
 from .topics import TOPICS_MAPPING
 from .tags import TAGS_MAPPING
 from .search import SEARCH_MAPPING
-from .uplaod import UPLOAD_MAPPING
 from .upload import UPLOAD_MAPPING
 from .users import USERS_MAPPING
 from .user_fields import USER_FIELDS_MAPPING
