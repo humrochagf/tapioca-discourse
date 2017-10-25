@@ -9,7 +9,6 @@ from .private_messages import PRIVATE_MESSAGES_MAPPING
 from .topics import TOPICS_MAPPING
 from .tags import TAGS_MAPPING
 from .search import SEARCH_MAPPING
-from .uplaod import UPLOAD_MAPPING
 from .admin import ADMIN_MAPPING
 from .upload import UPLOAD_MAPPING
 from .users import USERS_MAPPING
@@ -37,4 +36,3 @@ RESOURCE_MAPPING.update(GROUPS_MAPPING)
 RESOURCE_MAPPING.update(BADGES_MAPPING)
 RESOURCE_MAPPING.update(PASSWORD_RESET_MAPPING)
 RESOURCE_MAPPING.update(USER_FIELDS_MAPPING)
-RESOURCE_MAPPING.update(PASSWORD_RESET_MAPPING)
