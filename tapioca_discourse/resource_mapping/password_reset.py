@@ -10,7 +10,8 @@ PASSWORD_RESET_MAPPING = {
     'password_reset_create': {
         'resource': 'users/password-reset/{token}',
         'docs': ('http://docs.discourse.org/#tag/'
-                'Password-Reset%2Fpaths%2F~1users~1password-reset~1{token}%2Fput'),
+                 'Password-Reset%2Fpaths%2F~1users~1password-reset~1'
+                 '%7Btoken%7D%2Fput'),
         'methods': ['PUT'],
     },
 }

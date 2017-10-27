@@ -40,7 +40,8 @@ ADMIN_MAPPING = {
     'admin_api_key_generate': {
         'resource': 'admin/users/{id}/generate_api_key',
         'docs': ('http://docs.discourse.org/#tag/'
-                 'Admin%2Fpaths%2F~1admin~1users~1%7Bid%7D~1generate_api_key%2Fpost'),
+                 'Admin%2Fpaths%2F~1admin~1users~1%7Bid%7D~1'
+                 'generate_api_key%2Fpost'),
         'methods': ['POST'],
     },
     'admin_group_assign': {
@@ -52,7 +53,8 @@ ADMIN_MAPPING = {
     'admin_group_remove': {
         'resource': 'admin/users/{id}/groups/{group_id}',
         'docs': ('http://docs.discourse.org/#tag/'
-                 'Admin%2Fpaths%2F~1admin~1users~1%7Bid%7D~1groups~1%7Bgroup_id%7D%2Fdelete'),
+                 'Admin%2Fpaths%2F~1admin~1users~1%7Bid%7D~1groups~1%7B'
+                 'group_id%7D%2Fdelete'),
         'methods': ['DELETE'],
     },
     'admin_group_create': {
@@ -64,25 +66,29 @@ ADMIN_MAPPING = {
     'admin_group_delete': {
         'resource': 'admin/groups/{group_id}.json',
         'docs': ('http://docs.discourse.org/#tag/'
-                 'Admin%2Fpaths%2F~1admin~1groups~1%7Bgroup_id%7D.json%2Fdelete'),
+                 'Admin%2Fpaths%2F~1admin~1groups~1%7B'
+                 'group_id%7D.json%2Fdelete'),
         'methods': ['DELETE'],
     },
     'admin_group_members_list': {
         'resource': 'groups/{group_name}/members.json',
         'docs': ('http://docs.discourse.org/#tag/'
-                 'Admin%2Fpaths%2F~1groups~1%7Bgroup_name%7D~1members.json%2Fget'),
+                 'Admin%2Fpaths%2F~1groups~1%7Bgroup_name%7D~1'
+                 'members.json%2Fget'),
         'methods': ['GET'],
     },
     'admin_group_members_add': {
         'resource': 'groups/{group_id}/members.json',
         'docs': ('http://docs.discourse.org/#tag/'
-                 'Admin%2Fpaths%2F~1groups~1%7Bgroup_id%7D~1members.json%2Fput'),
+                 'Admin%2Fpaths%2F~1groups~1%7Bgroup_id%7D~1'
+                 'members.json%2Fput'),
         'methods': ['PUT'],
     },
     'admin_group_members_delete': {
         'resource': 'groups/{group_id}/members.json',
         'docs': ('http://docs.discourse.org/#tag/'
-                 'Admin%2Fpaths%2F~1groups~1%7Bgroup_id%7D~1members.json%2Fdelete'),
+                 'Admin%2Fpaths%2F~1groups~1%7Bgroup_id%7D~1'
+                 'members.json%2Fdelete'),
         'methods': ['DELETE'],
     },
     'admin_site_settings_show': {

@@ -38,4 +38,3 @@ TAGS_MAPPING = {
         'methods': ['GET'],
     },
 }
-

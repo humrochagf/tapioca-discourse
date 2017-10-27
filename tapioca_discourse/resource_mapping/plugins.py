@@ -8,4 +8,3 @@ PLUGINS_MAPPING = {
         'methods': ['GET'],
     },
 }
-

@@ -10,7 +10,7 @@ BACKUPS_MAPPING = {
     'backups_create': {
         'resource': 'admin/backups.json',
         'docs': ('http://docs.discourse.org/#tag/'
-                'Backups%2Fpaths%2F~1admin~1backups.json%2Fpost'),
+                 'Backups%2Fpaths%2F~1admin~1backups.json%2Fpost'),
         'methods': ['POST'],
     },
     'backups_update_readonly_mode': {
@@ -20,4 +20,3 @@ BACKUPS_MAPPING = {
         'methods': ['PUT'],
     },
 }
-

@@ -10,7 +10,7 @@ POSTS_MAPPING = {
     'posts_get': {
         'resource': 'posts/{id}',
         'docs': ('http://docs.discourse.org/#tag/'
-                'Posts%2Fpaths%2F~1posts~1%7Bid%7D%2Fget'),
+                 'Posts%2Fpaths%2F~1posts~1%7Bid%7D%2Fget'),
         'methods': ['GET'],
     },
     'posts_update': {

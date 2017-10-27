@@ -8,4 +8,3 @@ UPLOAD_MAPPING = {
         'methods': ['POST'],
     },
 }
-

@@ -8,4 +8,3 @@ NOTIFICATIONS_MAPPING = {
         'methods': ['GET'],
     },
 }
-
