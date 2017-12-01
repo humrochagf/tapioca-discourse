@@ -55,6 +55,31 @@ def get_email(package):
                      init_py, re.MULTILINE).group(1)
 
 
+def get_packages(package):
+    """
+    Return root package and all sub-packages.
+    """
+    return [dirpath
+            for dirpath, dirnames, filenames in os.walk(package)
+            if os.path.exists(os.path.join(dirpath, '__init__.py'))]
+
+
+def get_package_data(package):
+    """
+    Return all files under the root package, that are not in a
+    package themselves.
+    """
+    walk = [(dirpath.replace(package + os.sep, '', 1), filenames)
+            for dirpath, dirnames, filenames in os.walk(package)
+            if not os.path.exists(os.path.join(dirpath, '__init__.py'))]
+
+    filepaths = []
+    for base, filenames in walk:
+        filepaths.extend([os.path.join(base, filename)
+                          for filename in filenames])
+    return {package: filepaths}
+
+
 # python setup.py register
 if sys.argv[-1] == 'publish':
     os.system("python setup.py sdist upload")
@@ -73,11 +98,8 @@ setup(
     author=get_author(package),
     author_email=get_email(package),
     url='https://github.com/humrochagf/tapioca-discourse',
-    packages=[
-        'tapioca_discourse',
-    ],
-    package_dir={'tapioca_discourse': 'tapioca_discourse'},
-    include_package_data=True,
+    packages=get_packages('tapioca_discourse'),
+    get_package_data=get_package_data('tapioca_discourse'),
     install_requires=requirements,
     license="MIT",
     zip_safe=False,
