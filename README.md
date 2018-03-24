@@ -1,5 +1,9 @@
 # Tapioca discourse
 
+![PyPI](https://img.shields.io/pypi/v/nine.svg)
+![PyPI - License](https://img.shields.io/pypi/l/Django.svg)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/Django.svg)
+
 ## Installation
 ```
 pip install tapioca-discourse
